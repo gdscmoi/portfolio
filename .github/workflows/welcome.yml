@@ -12,7 +12,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         pr-message: |-
           Thank you for supporting the project $GITHUB_ACTOR, and congratulations on your
-          first contribution! A project committer will shortly review your contribution. 
+          first contribution!👏 A project committer will shortly review your contribution. 
           In the meantime, please skim over the 
           contribution guidelines to which all pull requests must adhere. We welcome you to the GDSC community! 🤝
 
