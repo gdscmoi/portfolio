@@ -128,3 +128,25 @@ available at [http://contributor-covenant.org/version/1/4][version]
 
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
+
+# summary for making a better contribution
+-Fork the repository
+
+-Clone the repository
+  ```bash
+    git clone git-url
+  ```
+-Create a branch from the main branch
+  ```bash
+    git branch name-of-branch
+  ```
+-Work on the issue
+
+-Pushing online
+```bash
+    git add .
+    git commit -m "commit message"
+    git push -u origin name-of-branch
+```
+-Navigate to GitHub and create a pull request.
+-Wait for maintainer to merger the code
