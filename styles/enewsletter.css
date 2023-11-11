@@ -1,0 +1,20 @@
+@media(min-width:768px) {
+    .news-input {
+        width:50%;
+    }
+}
+
+body {
+    font-family: "Montserrat";
+
+}
+
+#enroll {
+    background-color: aliceblue;
+    color: black;
+    padding: 7% 15%;
+    text-align: center;
+    margin: 7%;
+
+
+}
