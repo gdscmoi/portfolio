@@ -1,19 +1,18 @@
-name: "First Time Contributor"
+name: 'Welcome New Contributors'
+
 on:
-  schedule:
-  - cron: "*/10 * * * *"
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
 
 jobs:
-  triage:
+  welcome-new-contributor:
     runs-on: ubuntu-latest
     steps:
-    - uses: fjeremic/cron-first-interaction@0.2.0
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        pr-message: |-
-          Thank you for supporting the project $GITHUB_ACTOR, and congratulations on your
-          first contribution!👏 A project committer will shortly review your contribution. 
-          In the meantime, please skim over the 
-          contribution guidelines to which all pull requests must adhere. We welcome you to the GDSC community! 🤝
-
-          We hope to see you around!🤝
+      - name: 'Greet the contributor'
+        uses: garg3133/welcome-new-contributors@v1.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: 'Hello there, thanks for opening your first issue. We welcome you to the gdsc moi community!'
+          pr-message: 'Hello there, thanks for opening your first Pull Request. Someone will review it soon.'
